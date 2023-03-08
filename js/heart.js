@@ -163,7 +163,7 @@
             ctx.scale(scale, scale);
             ctx.moveTo(0, 0);
     	    ctx.lineTo(15, 15);
-    	    ctx.lineTo(125, 15);
+    	    ctx.lineTo(100, 15);
             ctx.stroke();
 
             ctx.moveTo(0, 0);
@@ -174,7 +174,7 @@
         },
         clear: function() {
             var ctx = this.tree.ctx, cirle = this.cirle;
-            var point = cirle.point, scale = cirle.scale, radius = 46;
+            var point = cirle.point, scale = cirle.scale, radius = 40;
             var w = h = (radius * scale);
             ctx.clearRect(point.x - w, point.y - h, 4 * w, 4 * h);
         },
